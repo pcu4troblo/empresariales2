@@ -1,0 +1,20 @@
+<div *ngIf="articulos!=null">
+    <h2>El clima está así en {{cityValue.value}} </h2>
+  <table border="1">
+    <tr>
+      <td>Temperatura</td><td>Estado</td><td>Descripcion</td><td>Humedad</td><td>Temp Min</td><td>Temp Max</td>
+    </tr>
+    <tr>
+      <td>{{articulos.main.temp}}</td>
+      <td>{{articulos.weather[0].main}}</td> 
+      <td>{{articulos.weather[0].description}}</td> 
+      <td>{{articulos.main.humidity}}</td>
+      <td>{{articulos.main.temp_min}}</td>
+      <td>{{articulos.main.temp_max}}</td>
+    </tr>
+  </table>
+<br>
+</div>
+  <h2>INGRESE CIUDAD</h2>
+  <input type="text" name="ciudad" id="ciudad" #cityValue><br>
+  <button type="button" (click)='handleSubmit(cityValue)'>Consultar</button>

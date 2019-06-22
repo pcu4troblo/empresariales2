@@ -1,0 +1,8 @@
+<div *ngIf="articulos!=null">
+  <p>{{articulos.items[1].snippet}}</p>
+
+
+</div>
+   <h2>INGRESE CIUDAD</h2>
+  <input type="text" name="palabra" id="palabra" #palabraValue><br>
+  <button type="button" (click)='handleSubmit1()'>Consultar</button>

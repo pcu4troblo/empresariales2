@@ -1,0 +1,32 @@
+*{
+   margin:0px;
+   padding:0px;
+
+}
+
+div#general
+{
+ margin:auto;
+ width:960px;
+ height:600px;
+
+}
+div#info
+{
+ float:right;
+ margin:auto;
+ width:350px;
+ height:600px;
+ 
+}
+
+div {
+  text-align: justify;
+}
+div#fondo
+
+{
+margin:auto;
+ width:960px;
+ height:600px;
+}
